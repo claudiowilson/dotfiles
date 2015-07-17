@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/nail/home/claudio/pg/yelp-main/yelp/component/cta/presentation'
+let g:netrw_dirhist_2='/nail/home/claudio/pg/yelp-main/yelp/component/cta/presentation/biz'
+let g:netrw_dirhist_3='/nail/home/claudio/pg/yelp-main'
