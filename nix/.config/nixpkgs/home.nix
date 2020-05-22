@@ -18,5 +18,6 @@
     neovim
     tmux
     wget
+    oh-my-zsh
   ];
 }
