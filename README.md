@@ -21,5 +21,9 @@ nix-shell '<home-manager>' -A install
 export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
 cp .config/nixpkgs/home.nix ~/
 home-manager switch
+
+# symlink the dotfiles
+stow neovim
+stow nix
 ```
 
