@@ -18,6 +18,27 @@
     neovim
     tmux
     wget
+    zsh
     oh-my-zsh
+    gradle
+    zsh-autosuggestions
+    antigen
   ];
+
+  programs.zsh.initExtra = ''
+      export NIX_PATH=$HOME/.nix-defexpr/channels''${NIX_PATH:+:}$NIX_PATH
+      export EDITOR=vim
+      export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
+      source ${pkgs.antigen}/share/antigen/antigen.zsh
+      source $ZSH/oh-my-zsh.sh
+      antigen bundle mafredri/zsh-async
+      antigen bundle sindresorhus/pure
+      antigen apply
+  '';
+
+  programs.zsh = {
+    enable = true;
+    enableAutosuggestions = true;
+    oh-my-zsh.enable = true;
+  };
 }

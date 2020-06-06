@@ -18,16 +18,11 @@ nix-channel --update
 
 nix-shell '<home-manager>' -A install
 
-export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
-cp .config/nixpkgs/home.nix ~/
-home-manager switch
-
-mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
-
 # symlink the dotfiles
 stow neovim
 stow nix
 stow zsh
+
+home-manager switch
 ```
 
