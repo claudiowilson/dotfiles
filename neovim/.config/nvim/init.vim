@@ -7,6 +7,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-fugitive'
+Plug 'LnL7/vim-nix'
 call plug#end()
 
 
