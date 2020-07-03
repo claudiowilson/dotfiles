@@ -1,6 +1,7 @@
 syntax on
 set nu
 set clipboard+=unnamedplus
+set termguicolors
 
 call plug#begin()
 Plug 'kien/ctrlp.vim'
@@ -8,6 +9,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'LnL7/vim-nix'
+Plug 'sheerun/vim-polyglot'
+Plug 'joshdick/onedark.vim'
 call plug#end()
 
 
@@ -20,3 +23,5 @@ set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+
+colorscheme onedark
