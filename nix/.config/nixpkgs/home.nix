@@ -23,6 +23,7 @@
     gradle
     zsh-autosuggestions
     antigen
+    nodejs
   ];
 
   programs.zsh.profileExtra = ''
