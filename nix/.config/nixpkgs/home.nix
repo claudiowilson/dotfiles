@@ -24,6 +24,10 @@
     zsh-autosuggestions
     antigen
     nodejs
+    maven
+    python3
+    python37Packages.flake8
+    python37Packages.pip
   ];
 
   programs.zsh.profileExtra = ''
