@@ -28,6 +28,7 @@
     python3
     python37Packages.flake8
     python37Packages.pip
+    sqlite
   ];
 
   programs.zsh.profileExtra = ''
