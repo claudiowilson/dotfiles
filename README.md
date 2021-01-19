@@ -3,15 +3,9 @@
 I use OSX with Nix as a package manager.
 
 ```
-# Install Nix on Catalina
-# Source: https://medium.com/@robinbb/install-nix-on-macos-catalina-ca8c03a225fc
-echo 'nix' | sudo tee -a /etc/synthetic.conf
-reboot  # Actually reboot your Mac.
-sudo diskutil apfs addVolume disk1 APFSX Nix -mountpoint /nix
-sudo diskutil enableOwnership /nix
-sudo chflags hidden /nix
-echo "LABEL=Nix /nix apfs rw" | sudo tee -a /etc/fstab
-sh <(curl https://nixos.org/nix/install) --daemon
+# Install Nix on Big Sur
+# https://gist.github.com/angerman/cbe02d814d81a8e4d4ced56b19046c19
+sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume
 
 nix-channel --add https://github.com/rycee/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
