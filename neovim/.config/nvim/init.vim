@@ -4,7 +4,7 @@ set clipboard+=unnamedplus
 set termguicolors
 
 call plug#begin()
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-fugitive'
