@@ -18,6 +18,12 @@ call plug#end()
 " pip3 install flake8
 let g:syntastic_python_checkers=['flake8']
 
+let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_max_files=0
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard']
+
+
+
 filetype plugin indent on
 set expandtab
 set tabstop=2
