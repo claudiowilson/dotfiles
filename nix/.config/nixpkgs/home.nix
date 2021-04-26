@@ -31,6 +31,8 @@
     sqlite
     gnupg
     eksctl
+    kompose
+    stow
   ];
 
   programs.zsh.profileExtra = ''
